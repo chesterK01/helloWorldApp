@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"helloWorldApp/db"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	// Initialize database connection
+	database := db.InitDB()
+	defer database.Close()
+
+	// Configure server port
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
 }
