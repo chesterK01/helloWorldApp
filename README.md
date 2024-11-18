@@ -17,14 +17,11 @@ A simple Go application that prints "Hello World".
    cd helloWorldApp
 2. **Configure MySQL Database:**
    ```sh
-   Ensure that the MySQL database hello_db is set up and accessible using the credentials:
-   Username: root
-   Password: ngoctuan1072003
-   Host: localhost
-   Port: 3306 
-
-   If the credentials or database name differs, modify the dsn string in db/db.go:
-   dsn := "your_user:your_password@tcp(your_host:your_port)/your_dbname"
+   1. Ensure MySQL is running and accessible.
+      Example for default credentials:
+      mysql -u root -p
+   2. Run the provided SQL script to create the database and table:
+      mysql -u root -p < setup.sql
 3. **Run the application:**
    ```sh
    go run main.go
