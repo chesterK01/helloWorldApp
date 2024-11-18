@@ -28,7 +28,7 @@ A simple Go application that prints "Hello World".
 3. **Run the application:**
    ```sh
    go run main.go
-4. **Expected output:** You will see
+4. **Expected output:**
    ```sh
    Successfully connected to the database
 

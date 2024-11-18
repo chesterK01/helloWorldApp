@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func InitDB() *sql.DB {
 	// Chuỗi kết nối đến MySQL
-	dsn := "root:ngoctuan1072003@tcp(localhost:3306)/library"
+	dsn := "root:ngoctuan1072003@tcp(localhost:3306)/hello_db"
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatalf("Error opening database: %v", err)
