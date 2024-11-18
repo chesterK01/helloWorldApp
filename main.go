@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// Initialize database connection
+	// Initialize db connection
 	database := db.InitDB()
 	defer database.Close()
 
